@@ -1,0 +1,292 @@
+body{
+    background-color: black;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cuerpo {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black center/cover;
+  overflow: hidden;
+}
+
+.card {
+    width: 500px;
+    height: 270px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa,
+    1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  padding: 1rem;
+  border-radius: 1rem;
+  animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
+}
+
+.card__row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.card__title {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: white;
+  margin: 1rem 0 1.5rem;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card__col {
+  padding-right: 2rem;
+}
+
+.card__input {
+  background: none;
+  border: none;
+  border-bottom: dashed 0.2rem rgba(255, 255, 255, 0.15);
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+.card__input--large {
+  font-size: 2rem;
+}
+.card__input2 {
+    background: none;
+    border: none;
+    border-bottom: dashed 0.2rem rgba(255, 255, 255, 0.15);
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+.card__input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: none;
+}
+
+.card__input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.card__label {
+  display: block;
+  color: #fff;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  font-weight: 400;
+}
+
+.card__chip {
+  align-self: flex-end;
+}
+
+.card__chip img {
+  width: 3rem;
+}
+
+.card__brand {
+  font-size: 3rem;
+  color: #fff;
+  min-width: 100px;
+  min-height: 75px;
+  text-align: right;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes cardEnter {
+  from {
+    transform: translateY(100vh);
+    opacity: 0.1;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.marco{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    background-color: grey;
+}
+
+.pantalla{
+    top: 40px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+}
+
+
+.teclado{
+    width: 200px;
+    height: 400px;
+    border-radius: 20%;
+    position: relative;
+    background-color: green;
+    
+}
+
+.base{
+    width: 600px;
+    height: 400px;
+    border-radius: 10%;
+    position: relative;
+    background-color: grey;
+    
+}
+
+.dinero{
+    width: 400px;
+    height: 100px;
+    border-radius:50%;
+    margin-left: -100px;
+    margin-top: 150px;
+    position: absolute;
+    background-color: black;
+    transform:  rotate(620deg);
+    
+}
+.arroja{
+    width: 350px;
+    height: 10px;
+    border-radius:50%;
+    margin-left: 30px;
+    margin-top: 45px;
+    position: absolute;
+    background-color: white;
+}
+
+.numero1{
+
+}
+td{
+    position: relative;
+    left: 10px;
+}
+
+.numero1{
+    margin-top: 60px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: auto;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero2{
+    margin-top: 130px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: auto;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero3{
+    margin-top: 210px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: auto;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero4{
+    margin-top: 290px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: auto;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+
+
+.numero5{
+    margin-top: 60px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero6{
+    margin-top: 130px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero7{
+    margin-top: 210px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+.numero8{
+    margin-top: 290px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    margin-left: 50px;
+    background-color: darkgrey;
+}
+h5{
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+h1{
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.dolar{
+    transform:  rotate(-32deg);
+    margin-top: 94px;
+    margin-left: -500px;  
+}
+
+.diez{
+    transform:  rotate(0deg);
+}
+
+.veinte{
+    transform:  rotate(180degdeg);
+}
+
+.cien{
+    transform:  rotate(180degdeg);
+  
+}
+

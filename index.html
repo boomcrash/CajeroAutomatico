@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAJERO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cuerpo">
+        <div class="card">
+            <form>
+            <h1 class="card__title">ECUADORIAN BANK</h1>
+            <div class="card__row">
+                <div class="card__col">
+                <label for="cardNumber" class="card__label">Numero de Tarjeta</label
+                ><input
+                    type="text"
+                    class="card__input card__input--large"
+                    id="cardNumber"
+                    placeholder="xxxx-xxxx-xxxx-xxxx"
+                />
+                </div>
+                <div class="card__col card__chip">
+                <img src="img/chip.svg" alt="chip" />
+                </div>
+            </div>
+            <div class="card__row">
+                <div class="card__col">
+                <label for="cardExpiry" class="card__label">Expiracion</label
+                ><input
+                    type="text"
+                    class="card__input"
+                    id="cardExpiry"
+                    placeholder="xx/xx"
+                />
+                </div>
+                <div class="card__col">
+                <label for="cardCcv" class="card__label">CCV</label
+                ><input
+                    type="text"
+                    class="card__input2"
+                    id="cardCcv"
+                    placeholder="xxx"
+                />
+                </div>
+                <div class="card__col card__brand"><i id="cardBrand"></i></div>
+            </div>
+            </form>
+            <button id="generar">GENERAR</button>
+            
+        </div>
+    </div>
+    <center>
+
+        <table style="color: white;"><td>SALDO DE TARJETA: $</td><td id="saldo">0</td></table>
+        <h5 style="color: white;">CAJERO AUTOMATICO</h5>
+        <div class="marco">
+            <div class="pantalla">
+                <div id="mensaje" class="numero1" id="diez" style="margin-top:0px; margin-left: 0px;  position: absolute; width: 100%; height: 10%; background-color: aqua;"> 
+                    <h5>CUANTO DESEAS RETIRAR?</h5>
+                </div>
+                <div class="numero1" id="diez">
+                    <h5>10</h5>
+                </div>
+                <div class="numero2" id="veinte">
+                    <h5>20</h5>
+                </div>
+                <div class="numero3" id="treinta">
+                    <h5>30</h5>
+                </div>
+                <div class="numero4" id="cuarenta">
+                    <h5>40</h5>
+                </div>
+                <div class="numero5" id="sesenta">
+                    <h5>60</h5>
+                </div>
+                <div class="numero6" id="ochenta">
+                    <h5>80</h5>
+                </div>
+                <div class="numero7" id="noventa">
+                    <h5>90</h5>
+                </div>
+                <div class="numero8" id="cien">
+                    <h5>100</h5>
+                </div>
+                <!--<table align="center">
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>70</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>90</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>-->
+            </div>
+        </div>
+    </center>
+    <center>
+        <div class="base">
+            <div class="teclado">
+                
+                <div class="dinero">
+                    <div class="arroja">
+                            <img style="display: none;" id="dolares" class="dolar" src="img/Dolar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+    <center>
+        <div class="billetes" style="margin-top: 70px;">
+            <h5  style="display: none; color: white;">RECIBISTE</h5>
+            <img style="display: none; color: white;"  id="dineroUno" class="diez" src="img/diez.jfif" alt="">
+            <h5 id="di" style="display: none; color: white;">10</h5>
+            <img style="display: none; color: white;"  id="dineroDos" class="veinte" src="img/veinte.jpg" alt="">
+            <h5 id="ve"  style="display: none; color: white;">10</h5>
+            <img style="display: none; color: white;"  id="dineroTres" class="cien" src="img/cien.png" alt="">
+            <h5 id="ci"  style="display: none; color: white;">10</h5>
+        </div>
+    </center>
+        <script src="extraer.js"></script>
+</body>        
+</html>
